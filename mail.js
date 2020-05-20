@@ -26,10 +26,10 @@ app.post("/",function(req,res){
 	};
 
 	const jsonData = JSON.stringify(data);
-	const url = 'https://us18.api.mailchimp.com/3.0/lists/757c40c579';
+	const url = 'https://usX.api.mailchimp.com/3.0/lists/757c40c579';
 	const options = {
 		method : "POST",
-		auth : "sandeep:849751528e1c10b01fd4d42c4562d12c-us18"
+		auth : "sandeep:Your API KEY"
 	}
 	//const
 
@@ -44,7 +44,7 @@ app.post("/",function(req,res){
 		})
 		
 	})
-	//quest.write(jsonData);
+	request.write(jsonData);
 	request.end();
 });
 
@@ -59,7 +59,7 @@ app.listen(3000,function(){
 })
 
 //Api key 
-//849751528e1c10b01fd4d42c4562d12c-us18
+//Your api key
 
 //list id
-//757c40c579
+//your list id
